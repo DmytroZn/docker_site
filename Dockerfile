@@ -1,4 +1,4 @@
-FROM nginx:stable
+FROM nginx:latest
 RUN mkdir /new_app
 WORKDIR /new_app
 ADD index.html /var/www/html
