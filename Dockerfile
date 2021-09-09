@@ -1,5 +1,5 @@
 FROM nginx:stable
-RUN mdkir /new_app
+RUN mkdir /new_app
 WORKDIR /new_app
 ADD index.html /var/www/html
 ADD . /new_app
