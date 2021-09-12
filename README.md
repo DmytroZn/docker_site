@@ -1,3 +1,4 @@
+[![Docker Image CI](https://github.com/DmytroZn/docker_site/actions/workflows/docker-image.yml/badge.svg)](https://github.com/DmytroZn/docker_site/actions/workflows/docker-image.yml)
 # docker_site
 this is my home task with docker
 
