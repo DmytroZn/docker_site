@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Publish Docker
+      uses: elgohr/Publish-Docker-Github-Action@3.04
+
+      with:
+        name: znak07/docker_site
+        username: znak07
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        tags: ${{ github.sha }}
